@@ -4,12 +4,13 @@ import threading
 def countdown(number):
     while number > 0:
         number -=1
+        print(number)
 
 if __name__ == '__main__':
     
     start = time.time()
 
-    count = 100000000
+    count = 10
 
     t1 = threading.Thread(target=countdown, args=(count,))
     t2 = threading.Thread(target=countdown, args=(count,))
