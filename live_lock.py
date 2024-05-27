@@ -54,6 +54,8 @@ def problem():
 
     worker1.start()
     worker2.start()
+    worker1.join()
+    worker2.join()
 
 def solution():
     import threading
@@ -102,6 +104,8 @@ def solution():
 
     worker1.start()
     worker2.start()
+    worker1.join()
+    worker2.join()
 
 
-solution()
+problem()
